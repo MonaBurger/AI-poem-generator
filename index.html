@@ -4,42 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI poem generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI english poem generator!</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Enter the topic of the english poem"
-          autofocus
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/MonaBurger" target="_blank">Mona Burger</a>
-      and is
-      <a href="https://github.com/MonaBurger/AI-poem-generator" target="_blank"
-        >open-sourced on Github</a
-      >
-      and is
-      <a href="https://ai-poems.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-      <div>
+    <div class="container">
+      <header>
+        <h1>AI English Poem Generator!</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter the topic of the english poem"
+            autofocus
+            required
+            class="instructions"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </main>
+
+      <div class="poem">
         The poem
         <br />
         comes here
       </div>
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/MonaBurger" target="_blank">Mona Burger</a>
+        and is
+        <a
+          href="https://github.com/MonaBurger/AI-poem-generator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and is
+        <a href="https://ai-poems.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
